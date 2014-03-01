@@ -17,16 +17,20 @@ suits.each do |s|
 end
 shuffled = deck.shuffle
 count = 0
-p_hand
-d_hand
-shuffled.each do |card|
-  count = 1 +count
-  p_hand.push(shuffled[0])
-  d_hand.push(shuffled[1])
-  shuffled.delete_at(0)
-  shuffled.delete_at(1)
-
-
+deckcount = 0
+p_hand = []
+d_hand = []
+while deckcount < 26
+  deckcount = 1 + deckcount
+  while count < 2
+    count = 1 + count
+  
+    p_hand.push(shuffled[0])
+    d_hand.push(shuffled[1])
+    #shuffled.delete_at(0)
+    #shuffled.delete_at(1)
+  end
 end
-puts count
-#p_hand = shuffled.first
+
+puts "Players hand #{p_hand}"
+puts "Dealers hand #{d_hand}"
