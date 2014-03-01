@@ -15,24 +15,5 @@ suits.each do |s|
     deck.push([r, s])
   end
 end
-
-player[]
-dealer[]
-deck[rand(0..51)].each do |deal|
-  while n == 26
-
-    player.push deal
-    dealer.push deal 
-
- end
-puts test
-
-def shuffle deck
-  shuffle = rand(0...51)
-end
-
-#i=51
-#while true
-#  p_dealt >> [deck[rand(0..i)]
-#  d_dealt >> [deck[rand(0..i)]]  
-#end
+shuffle = deck.shuffle
+puts shuffle
