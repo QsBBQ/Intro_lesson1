@@ -11,18 +11,26 @@ ranks = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "
 suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 deck = []
 
-#Building Deck 
+#Building Deck probably need method
+def build_deck
   suits.each do |s|
     ranks.each do |r|
       deck.push([r, s])
     end
   end
+end
 
 #Shuffling Deck
-shuffled = deck.shuffle
-
+shuffled = []
+def myshuffle
+  shuffled = deck.shuffle
+end
 #Trying to deal
 #need to turn these into methods.
+
+def deal()
+end
+
 count = 0
 deckcount = 0
 p_hand = []
@@ -37,6 +45,8 @@ d_hand = []
     shuffled.delete_at(0)
     shuffled.delete_at(1)
   end
+
+
   if p_hand[0][0].to_i + p_hand[1][0].to_i == 21
     puts "Player 21!"
     
@@ -50,5 +60,5 @@ d_hand = []
    end
 #end
 
-puts "Players hand #{p_hand}"
-puts "Dealers hand #{d_hand}"
+#puts "Players hand #{p_hand}"
+#puts "Dealers hand #{d_hand}"
