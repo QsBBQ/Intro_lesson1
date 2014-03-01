@@ -15,5 +15,18 @@ suits.each do |s|
     deck.push([r, s])
   end
 end
-shuffle = deck.shuffle
-puts shuffle
+shuffled = deck.shuffle
+count = 0
+p_hand
+d_hand
+shuffled.each do |card|
+  count = 1 +count
+  p_hand.push(shuffled[0])
+  d_hand.push(shuffled[1])
+  shuffled.delete_at(0)
+  shuffled.delete_at(1)
+
+
+end
+puts count
+#p_hand = shuffled.first
