@@ -9,13 +9,13 @@ name = gets.chomp
 
 ranks = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
 suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
-deck = ""
+deck = []
 suits.each do |s|
   ranks.each do |r|
-    deck = deck + r + " of "+s
+    deck.push([r, s])
   end
 end
-
+puts deck
   
 def shuffle deck
   shuff = []
