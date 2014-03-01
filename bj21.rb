@@ -30,6 +30,12 @@ while deckcount < 26
     shuffled.delete_at(0)
     shuffled.delete_at(1)
   end
+  if p_hand[0][0].to_i + p_hand[1][0].to_i < 21
+    puts "21!"
+  else
+    break
+     
+   end
 end
 
 puts "Players hand #{p_hand}"
