@@ -27,8 +27,8 @@ while deckcount < 26
   
     p_hand.push(shuffled[0])
     d_hand.push(shuffled[1])
-    #shuffled.delete_at(0)
-    #shuffled.delete_at(1)
+    shuffled.delete_at(0)
+    shuffled.delete_at(1)
   end
 end
 
