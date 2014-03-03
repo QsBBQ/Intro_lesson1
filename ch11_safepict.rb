@@ -1,8 +1,10 @@
 #Chapter 11 Safer picture downloading
 #
 
+#moving pictures here
 Dir.chdir '/Users/qavila/projects/pictures'
 
+#Here are the pictures
 pic_names = Dir['/Users/qavila/Pictures/test/*.JPG']
 
 puts 'What would you like to call this batch?'
