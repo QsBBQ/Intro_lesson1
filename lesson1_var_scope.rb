@@ -1,4 +1,4 @@
-#Lesson 1 variable scopt
+#Lesson 1 variable scope
 
 #a = 21
 puts "What is the first number?"
